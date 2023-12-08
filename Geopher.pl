@@ -1,0 +1,13 @@
+use Net::SMTP;
+$params{geopher_id} = $uuid;
+$params{geopher_e}  = 'ole.aamot@gmail.com';
+my $smtp = Net::SMTP->new('smarthost.domeneshop.no');
+$smtp->mail("geopher2");
+$smtp->to($params{geopher_e});
+$smtp->data();
+#$smtp->datasend("From: Ole Aamot <ole\@aamot.software>\n");
+$smtp->datasend("To: ole.aamot\@gmail.com\n");
+$smtp->datasend("\n");
+$smtp->datasend("Test\n");
+$smtp->dataend();
+$smtp->quit;

@@ -1,0 +1,65 @@
+--- push.php.2023-04-28	2023-04-28 07:33:46.706059019 +0200
++++ push.php	2023-04-28 07:44:36.969563202 +0200
+@@ -1,6 +1,6 @@
+ <?php
+ 
+-// require_once('/home/4/p/piperpal/stripe-php/init.php');
++require_once('/home/4/p/piperpal/stripe-php/init.php');
+ // require_once('/home/4/p/piperpal/YayLocation.php');
+ 
+ // $yay = new YayLocation($_POST);
+@@ -9,32 +9,20 @@
+ 
+ //	print "INSERT IGNORE INTO piperpal (name, location, service, glat, glon, modified, created, paid, token, type, email) VALUES ('" . $_POST['name'] . "','" . $_POST['location'] . "','" . $_POST['service'] . "','" . $_POST['glat'] . "','" . $_POST['glon'] . "','" . date("Y-m-d h:i:s",strtotime($_POST['notBefore'])) . "','" . date("Y-m-d h:i:s",strtotime($_POST['notAfter'])) . "', '" . $_POST['paid'] . "','" . $_POST['stripeToken'] . "', '" . $_POST['stripeTokenType'] . "','" . $_POST['stripeEmail'] . "') ON DUPLICATE KEY UPDATE modified = NOW();";
+ 
+-// try {
++$stripe = array(
++    "secret_key"      => "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",
++    "publishable_key" => "pk_live_51MsrtFAgJ7jHvJPRzksQbNY4573e98c9MPwsnOXymtKYWFUVgh6BbmZV9tPhhTwppFLDabbfm7Lkj9dEYaJBD9em00xNBVHJzf"
++);
++
++\Stripe\Stripe::setApiKey($stripe['secret_key']);
++
++if ($_POST['paid'] > 0) {
+     
+-//     if ($yay->get_freedate($_POST['notBefore'], $_POST['notAfter']) == TRUE) {
+-        
+-//         $yay->get_checkout("INSERT IGNORE INTO piperpal (name, location, service, glat, glon, modified, created, paid, token, type, email) VALUES ('" . $_POST['name'] . "','" . $_POST['location'] . "','" . $_POST['service'] . "','" . $_POST['glat'] . "','" . $_POST['glon'] . "', '" . date("Y-m-d h:i:s",strtotime($_POST['notBefore'])) . "','" . date("Y-m-d h:i:s",strtotime($_POST['notAfter'])) . "','" . $_POST['paid'] . "','" . $_POST['stripeToken'] . "', '" . $_POST['stripeTokenType'] . "','" . $_POST['stripeEmail'] . "') ON DUPLICATE KEY UPDATE modified = NOW();");
+-//         print_r($yay->result);
+-        
+-//         $stripe = array(
+-//             "secret_key"      => "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",
+-//             "publishable_key" => "pk_live_51MsrtFAgJ7jHvJPRzksQbNY4573e98c9MPwsnOXymtKYWFUVgh6BbmZV9tPhhTwppFLDabbfm7Lkj9dEYaJBD9em00xNBVHJzf"
+-//         );
+-        
+-//         \Stripe\Stripe::setApiKey($stripe['secret_key']);
+-        
+-//         if ($_POST['paid'] > 0) {
+-            
+-//             $charge = \Stripe\Charge::create(array("amount" => $_POST['paid'],
+-//                                                    "currency" => "usd",
+-//                                                    "source" => $token,
+-//                                                    /					 "description" => $_POST['name']));
+-//         }
+-//     }
+-// }
+-// catch(\Stripe\Error\Card $e) {
+-//   print "The card has been declined.  Please try another card.";
+-// }
++    $charge = \Stripe\Charge::create(array("amount" => $_POST['paid'],
++                                           "currency" => "usd",
++                                           "source" => $token,
++                                           "description" => $_POST['name']));
++}
+ 
+ if ($_POST['paid'] > 0) {
+     $fp = fopen("/home/4/p/piperpal/data.csv", "a+");
+@@ -44,7 +32,7 @@
+     $query = "INSERT IGNORE INTO piperpal (name, location, service, glat, glon, modified, created, paid, token, type, email) VALUES ('" . $_POST['name'] . "','" . $_POST['location'] . "','" . $_POST['service'] . "','" . $_POST['glat'] . "','" . $_POST['glon'] . "', '" . date("Y-m-d h:i:s",strtotime($_POST['notBefore'])) . "','" . date("Y-m-d h:i:s",strtotime($_POST['notAfter'])) . "','" . $_POST['paid'] . "','" . $_POST['stripeToken'] . "', '" . $_POST['stripeTokenType'] . "','" . $_POST['stripeEmail'] . "') ON DUPLICATE KEY UPDATE modified = NOW();";
+     $result = $db->query($query);
+     header("Location: https://www.piperpal.com/?name=" . $_POST['name'] . "&glat=" . $_POST['glat'] . "&location=" . $_POST['location'] . "&glon=" . $_POST['glon'] . "&service=" . $_POST['service'] . "&paid=" . $_POST['paid']);
+-
++    
+     print "<!DOCTYPE html><html lang='en'><head><meta charset='utf-8' />";
+     print "<meta http-equiv='refresh' content='120; url=https://www.piperpal.com/?query=" . $_POST['name'] . "&radius=10000&search=Go&glat=" . $_POST['glat'] . "&glon=" . $_POST['glon'] . "'>";
+     

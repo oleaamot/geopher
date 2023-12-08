@@ -1,0 +1,2816 @@
+=head2 Mon Jun  6 19:31:25 2022: C<Module> L<Encode::Locale|Encode::Locale>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.05>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:31:28 2022: C<Module> L<Date::Parse|Date::Parse>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.33>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:31:30 2022: C<Module> L<HTTP::Date|HTTP::Date>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.05>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:31:34 2022: C<Module> L<IO::HTML|IO::HTML>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.004>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:31:40 2022: C<Module> L<Try::Tiny|Try::Tiny>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.31>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:31:43 2022: C<Module> L<Test::Fatal|Test::Fatal>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.016>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:31:45 2022: C<Module> L<LWP::MediaTypes|LWP::MediaTypes>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.04>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:31:51 2022: C<Module> L<URI|URI>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 5.10>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:31:55 2022: C<Module> L<HTTP::Message|HTTP::Message>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.36>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:33:30 2022: C<Module> L<DBI|DBI>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.643>
+
+=item *
+
+C<EXE_FILES: dbilogstrip dbiprof dbiproxy>
+
+=back
+
+=head2 Mon Jun  6 19:33:53 2022: C<Module> L<File::Listing|File::Listing>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.15>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:33:56 2022: C<Module> L<HTML::Tagset|HTML::Tagset>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 3.20>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:34:04 2022: C<Module> L<HTML::Parser|HTML::Parser>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 3.78>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:34:07 2022: C<Module> L<HTTP::Cookies|HTTP::Cookies>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.10>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:34:10 2022: C<Module> L<HTTP::Negotiate|HTTP::Negotiate>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.01>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:34:17 2022: C<Module> L<WWW::RobotRules|WWW::RobotRules>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.02>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:34:35 2022: C<Module> L<LWP|LWP>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.66>
+
+=item *
+
+C<EXE_FILES: bin/lwp-download bin/lwp-dump bin/lwp-mirror bin/lwp-request>
+
+=back
+
+=head2 Mon Jun  6 19:34:39 2022: C<Module> L<Test::LeakTrace|Test::LeakTrace>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.17>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:34:52 2022: C<Module> L<HTML::Form|HTML::Form>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.07>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:35:47 2022: C<Module> L<JSON|JSON>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 4.06>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:35:49 2022: C<Module> L<Canary::Stability|Canary::Stability>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2013>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:35:52 2022: C<Module> L<common::sense|common::sense>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 3.75>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:35:54 2022: C<Module> L<Types::Serialiser|Types::Serialiser>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.01>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:36:00 2022: C<Module> L<JSON::XS|JSON::XS>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 4.03>
+
+=item *
+
+C<EXE_FILES: bin/json_xs>
+
+=back
+
+=head2 Mon Jun  6 19:36:25 2022: C<Module> L<Data::UUID|Data::UUID>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.226>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:36:37 2022: C<Module> L<Email::Date::Format|Email::Date::Format>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.005>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:36:40 2022: C<Module> L<MIME::Types|MIME::Types>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.22>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:36:43 2022: C<Module> L<MailTools|MailTools>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.21>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:36:46 2022: C<Module> L<MIME::Lite|MIME::Lite>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 3.033>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:37:00 2022: C<Module> L<String::MkPasswd|String::MkPasswd>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.05>
+
+=item *
+
+C<EXE_FILES: bin/mkpasswd.pl>
+
+=back
+
+=head2 Mon Jun  6 19:50:08 2022: C<Module> L<Log::Log4perl|Log::Log4perl>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.55>
+
+=item *
+
+C<EXE_FILES: eg/l4p-tmpl>
+
+=back
+
+=head2 Mon Jun  6 19:50:15 2022: C<Module> L<XML::Parser|XML::Parser>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.46>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:50:17 2022: C<Module> L<libxml-perl|libxml-perl>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.08>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:50:20 2022: C<Module> L<XML::RegExp|XML::RegExp>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.04>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:50:24 2022: C<Module> L<XML::DOM|XML::DOM>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.46>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:50:28 2022: C<Module> L<B::COW|B::COW>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.004>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:50:31 2022: C<Module> L<Clone|Clone>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.45>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:50:34 2022: C<Module> L<Math::Base::Convert|Math::Base::Convert>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.11>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:51:34 2022: C<Module> L<Params::Util|Params::Util>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.102>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:51:37 2022: C<Module> L<Text::Soundex|Text::Soundex>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 3.05>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:51:43 2022: C<Module> L<SQL::Statement|SQL::Statement>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.414>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:51:50 2022: C<Module> L<Number::Compare|Number::Compare>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.03>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:51:53 2022: C<Module> L<Text::Glob|Text::Glob>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.11>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:51:55 2022: C<Module> L<File::Find::Rule|File::Find::Rule>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.34>
+
+=item *
+
+C<EXE_FILES: findrule>
+
+=back
+
+=head2 Mon Jun  6 19:51:58 2022: C<Module> L<Test::Pod|Test::Pod>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.52>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:52:02 2022: C<Module> L<Devel::Symdump|Devel::Symdump>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.18>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:52:06 2022: C<Module> L<Pod::Parser|Pod::Parser>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.65>
+
+=item *
+
+C<EXE_FILES: scripts/podselect>
+
+=back
+
+=head2 Mon Jun  6 19:52:09 2022: C<Module> L<Pod::Coverage|Pod::Coverage>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.23>
+
+=item *
+
+C<EXE_FILES: bin/pod_cover>
+
+=back
+
+=head2 Mon Jun  6 19:52:12 2022: C<Module> L<Test::Pod::Coverage|Test::Pod::Coverage>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.10>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:52:15 2022: C<Module> L<Test::Inter|Test::Inter>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.09>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:52:54 2022: C<Module> L<Date::Manip|Date::Manip>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.88>
+
+=item *
+
+C<EXE_FILES: examples/dm_date examples/dm_zdump>
+
+=back
+
+=head2 Mon Jun  6 19:52:59 2022: C<Module> L<Dist::CheckConflicts|Dist::CheckConflicts>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.11>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:53:05 2022: C<Module> L<Sub::Exporter::Progressive|Sub::Exporter::Progressive>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.001013>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:53:07 2022: C<Module> L<Devel::GlobalDestruction|Devel::GlobalDestruction>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.14>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:53:10 2022: C<Module> L<IPC::Run3|IPC::Run3>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.048>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:53:16 2022: C<Module> L<Test::Requires|Test::Requires>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.11>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:53:21 2022: C<Module> L<Eval::Closure|Eval::Closure>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.14>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:53:58 2022: C<Module> L<Perl::Tidy|Perl::Tidy>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 20220217>
+
+=item *
+
+C<EXE_FILES: bin/perltidy>
+
+=back
+
+=head2 Mon Jun  6 19:54:02 2022: C<Module> L<PadWalker|PadWalker>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.5>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:04 2022: C<Module> L<Devel::Caller|Devel::Caller>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.06>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:07 2022: C<Module> L<Devel::LexAlias|Devel::LexAlias>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.05>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:10 2022: C<Module> L<Class::Data::Inheritable|Class::Data::Inheritable>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.09>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:14 2022: C<Module> L<Devel::StackTrace|Devel::StackTrace>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.04>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:17 2022: C<Module> L<Exception::Class|Exception::Class>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.45>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:20 2022: C<Module> L<MRO::Compat|MRO::Compat>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.15>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:24 2022: C<Module> L<Role::Tiny|Role::Tiny>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.002004>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:30 2022: C<Module> L<Class::Method::Modifiers|Class::Method::Modifiers>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.13>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:35 2022: C<Module> L<Sub::Quote|Sub::Quote>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.006006>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:39 2022: C<Module> L<Sub::Name|Sub::Name>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.26>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:42 2022: C<Module> L<XString|XString>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.005>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:53 2022: C<Module> L<Specio|Specio>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.47>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:54:59 2022: C<Module> L<Ref::Util::XS|Ref::Util::XS>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.117>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:55:03 2022: C<Module> L<Ref::Util|Ref::Util>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.204>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:55:09 2022: C<Module> L<Importer|Importer>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.026>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:55:15 2022: C<Module> L<Module::Pluggable|Module::Pluggable>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 5.2>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:55:18 2022: C<Module> L<Scope::Guard|Scope::Guard>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.21>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:55:20 2022: C<Module> L<Sub::Info|Sub::Info>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.002>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:55:24 2022: C<Module> L<Term::Table|Term::Table>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.016>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:55:29 2022: C<Module> L<MIME::Charset|MIME::Charset>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.012.2>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:55:38 2022: C<Module> L<Unicode::LineBreak|Unicode::LineBreak>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2019.001>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:55:43 2022: C<Module> L<Devel::Hide|Devel::Hide>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.0015>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:55:45 2022: C<Module> L<Term::Size::Perl|Term::Size::Perl>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.031>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:55:48 2022: C<Module> L<Term::Size::Any|Term::Size::Any>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.002>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:07 2022: C<Module> L<Test2::Suite|Test2::Suite>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.000145>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:10 2022: C<Module> L<Test2::Plugin::NoWarnings|Test2::Plugin::NoWarnings>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.09>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:14 2022: C<Module> L<Test::Without::Module|Test::Without::Module>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.20>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:19 2022: C<Module> L<Params::ValidationCompiler|Params::ValidationCompiler>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.30>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:26 2022: C<Module> L<Class::XSAccessor|Class::XSAccessor>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.19>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:33 2022: C<Module> L<Module::Implementation|Module::Implementation>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.09>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:39 2022: C<Module> L<Variable::Magic|Variable::Magic>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.62>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:42 2022: C<Module> L<B::Hooks::EndOfScope|B::Hooks::EndOfScope>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.26>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:46 2022: C<Module> L<Sub::Identify|Sub::Identify>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.14>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:50 2022: C<Module> L<CPAN::Meta::Check|CPAN::Meta::Check>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.014>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:55 2022: C<Module> L<Package::Stash::XS|Package::Stash::XS>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.29>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:56:59 2022: C<Module> L<Package::Stash|Package::Stash>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.40>
+
+=item *
+
+C<EXE_FILES: bin/package-stash-conflicts>
+
+=back
+
+=head2 Mon Jun  6 19:57:04 2022: C<Module> L<namespace::clean|namespace::clean>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.27>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:57:07 2022: C<Module> L<namespace::autoclean|namespace::autoclean>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.29>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:57:15 2022: C<Module> L<Log::Dispatch|Log::Dispatch>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.70>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:57:21 2022: C<Module> L<Path::Tiny|Path::Tiny>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.122>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:57:26 2022: C<Module> L<Unicode::UTF8|Unicode::UTF8>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.62>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:57:30 2022: C<Module> L<Test::MockRandom|Test::MockRandom>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.01>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:58:08 2022: C<Module> L<Capture::Tiny|Capture::Tiny>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.48>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:58:11 2022: C<Module> L<Test::FailWarnings|Test::FailWarnings>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.008>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:58:15 2022: C<Module> L<Sub::Uplevel|Sub::Uplevel>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.2800>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:58:19 2022: C<Module> L<Test::Warn|Test::Warn>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.36>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:58:23 2022: C<Module> L<Log::Dispatch::FileRotate|Log::Dispatch::FileRotate>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.38>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:59:13 2022: C<Module> L<DBD::SQLite|DBD::SQLite>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.70>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 19:59:34 2022: C<Module> L<Text::CSV_XS|Text::CSV_XS>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.48>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 20:39:34 2022: C<Module> L<Algorithm::Diff|Algorithm::Diff>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.201>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 20:39:40 2022: C<Module> L<Spiffy|Spiffy>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.46>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 20:39:43 2022: C<Module> L<Text::Diff|Text::Diff>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.45>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 20:39:53 2022: C<Module> L<Test::Base|Test::Base>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.89>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 20:39:56 2022: C<Module> L<Test::YAML|Test::YAML>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.07>
+
+=item *
+
+C<EXE_FILES: bin/test-yaml>
+
+=back
+
+=head2 Mon Jun  6 20:40:05 2022: C<Module> L<YAML|YAML>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.30>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Mon Jun  6 20:58:23 2022: C<Module> L<Text::Levenshtein|Text::Levenshtein>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.15>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:15:27 2023: C<Module> L<File::ShareDir::Install|File::ShareDir::Install>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.14>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:15:33 2023: C<Module> L<Class::Inspector|Class::Inspector>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.36>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:15:36 2023: C<Module> L<File::ShareDir|File::ShareDir>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.118>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:15:42 2023: C<Module> L<Exporter::Tiny|Exporter::Tiny>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.006002>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:16:53 2023: C<Module> L<IPC::System::Simple|IPC::System::Simple>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.30>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:16:57 2023: C<Module> L<Class::Tiny|Class::Tiny>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.008>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:17:03 2023: C<Module> L<Test::File|Test::File>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.993>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:17:06 2023: C<Module> L<File::Copy::Recursive|File::Copy::Recursive>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.45>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:17:09 2023: C<Module> L<Test::File::ShareDir|Test::File::ShareDir>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.001002>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:17:47 2023: C<Module> L<DateTime::Locale|DateTime::Locale>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.40>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:17:51 2023: C<Module> L<Class::Singleton|Class::Singleton>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.6>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:17:57 2023: C<Module> L<DateTime::TimeZone|DateTime::TimeZone>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.60>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Dec  5 02:18:14 2023: C<Module> L<DateTime|DateTime>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.65>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+

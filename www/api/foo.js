@@ -1,0 +1,1 @@
+var locations = '{ "locations" : [' + '{"id": "13", "name": "GoogleVisitorCenter", "service": "Search", "location": "http://www.google.com/", "modified": "2015-08-27 18:29:49", "created": "2015-08-27 18:29:49", "glat": "37.42281050", "glon": "-122.08737760", "paid": "1", "token": "tok_16eTG3AZBHUS3EAZUcuZKov5", "type": "card", "email": "oka@oka.no"}]}';

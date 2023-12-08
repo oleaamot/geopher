@@ -1,0 +1,7 @@
+AddDefaultCharset UTF-8
+RewriteEngine On
+RewriteRule ^([\sa-åA-Å0-9]+)$ https://www.piperpal.com/?query=$1&radius=$2&search=Go&glat=$3&glon=$4#results [R=301,L,NE,NC]
+RewriteRule ^([\sa-åA-Å0-9]+)/([\sa-åA-Å0-9]+)$ https://www.piperpal.com/?query=$2&service=$1&search=Go&glat=$3&glon=$4#results [R]
+RewriteRule ^([\sa-åA-Å0-9]+)([\:])([\sa-åA-Å0-9]+)$ /service/$1/$3 [R]
+RewriteCond %{HTTP_REFERER} \.(cn|de|eu|ru|sa|kp|ua|il|us|mil)(/|$) [NC]
+RewriteCond %{HTTP_REFERER} !(google|yandex|mail)\.

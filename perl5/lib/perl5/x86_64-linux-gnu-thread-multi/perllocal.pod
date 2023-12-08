@@ -1,0 +1,352 @@
+=head2 Tue Jun  9 07:33:01 2020: C<Module> L<Math::Round|Math::Round>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.07>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:36:21 2020: C<Module> L<Net::HTTP|Net::HTTP>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 6.19>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:36:25 2020: C<Module> L<Test::RequiresInternet|Test::RequiresInternet>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.05>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:36:29 2020: C<Module> L<Test::Needs|Test::Needs>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.002006>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:44:35 2020: C<Module> L<DBI|DBI>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.643>
+
+=item *
+
+C<EXE_FILES: dbiproxy dbiprof dbilogstrip>
+
+=back
+
+=head2 Tue Jun  9 08:45:32 2020: C<Module> L<Test::Deep|Test::Deep>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.130>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:45:36 2020: C<Module> L<Test::NoWarnings|Test::NoWarnings>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.04>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:45:49 2020: C<Module> L<CGI|CGI>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 4.49>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:47:28 2020: C<Module> L<Test::Output|Test::Output>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.031>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:47:34 2020: C<Module> L<Test::Warnings|Test::Warnings>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.030>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:47:41 2020: C<Module> L<ExtUtils::Config|ExtUtils::Config>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.008>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:47:43 2020: C<Module> L<ExtUtils::InstallPaths|ExtUtils::InstallPaths>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.012>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:47:47 2020: C<Module> L<ExtUtils::Helpers|ExtUtils::Helpers>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.026>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 08:49:43 2020: C<Module> L<WWW::Mechanize|WWW::Mechanize>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.99>
+
+=item *
+
+C<EXE_FILES: script/mech-dump>
+
+=back
+
+=head2 Tue Jun  9 15:54:10 2020: C<Module> L<Mock::Config|Mock::Config>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.03>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Jun  9 15:54:22 2020: C<Module> L<Devel::CheckLib|Devel::CheckLib>
+
+=over 4
+
+=item *
+
+C<installed into: /home/5/g/geopher/perl5/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.14>
+
+=item *
+
+C<EXE_FILES: bin/use-devel-checklib>
+
+=back
+

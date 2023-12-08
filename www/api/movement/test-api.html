@@ -1,0 +1,8 @@
+  <script type="text/javascript" src="https://api.piperpal.com/location/json.php?service=Search&glat=37.4375596&glon=-122.11922789999998"></script>
+  <script language="JavaScript">
+    var obj = JSON.parse(locations);
+    for (i=0; i < obj.locations.length; i++) {
+	document.write("<h4>" + obj.locations[i].name + "</h4><h6><a href='" + obj.locations[i].location + "'>" + obj.locations[i].location + "</a> (" + obj.locations[i].distance + ")</h6><p>" + " " + obj.locations[i].service + " " + "</p>\n");
+	document.write("<p>" + obj.locations[i].distance + "</p><form method='GET' action='/'><input type='text' name='query' placeholder='' value='" + obj.locations[i].name + "'/><input type='hidden' name='glat' value='" + obj.locations[i].glat + "' /><input type='hidden' name='glon' value='" + obj.locations[i].glon + "'/><span id='geopher'></span><select name='service'><option selected value='" + obj.locations[i].service + "'>" + obj.locations[i].service + "</option></select><input type='submit' value='Search' /></p>");
+    }
+    </script>

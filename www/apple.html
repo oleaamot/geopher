@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <!--[if IE 8]>
+	<link href="/css/common_o2.1_ie8-91981ea8f3932c01fab677a25d869e49.css" media="all" rel="stylesheet" type="text/css" />
+	<![endif]-->
+    <!--[if !(IE 8)]><!-->
+	<link href="/css/common_o2.1-858f47868a8d0e12dfa7eb60fa84fb17.css" media="all" rel="stylesheet" type="text/css" />
+	<!--<![endif]-->
+	
+        <!--[if lt IE 9]>
+	    <link href="/css/airglyphs-ie8-9f053f042e0a4f621cbc0cd75a0a520c.css" media="all" rel="stylesheet" type="text/css" />
+	    <![endif]-->
+	
+	<link href="/css/main-f3fcc4027aaa2c83f08a1d51ae189e3b.css" media="screen" rel="stylesheet" type="text/css" />
+	<!--[if IE 7]>
+	    <link href="/css/p1_ie_7-0ab7be89d3999d751ac0e89c44a0ab50.css" media="screen" rel="stylesheet" type="text/css" />
+	    <![endif]-->
+	<!--[if IE 6]>
+	    <link href="/css/p1_ie_6-7d6a1fd8fe9fdf1ce357f6b864c83979.css" media="screen" rel="stylesheet" type="text/css" />
+	    <![endif]-->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="dns-prefetch" href="//maps.googleapis.com">
+	<link rel="dns-prefetch" href="//maps.gstatic.com">
+	<link rel="dns-prefetch" href="//mts0.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//www.geopher.com">
+	<title>geopher.com - Movement-based Search Engine</title>
+	<link href="my_style_form.css" type="text/css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  </head>
+  <!-- Styles -->
+  <style>
+    #name label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    }
+    #name_submit{
+    padding-left: 100px;
+    }
+    #name div{
+    margin-top: 1em;
+    }
+    textarea{
+    vertical-align: top;
+    height: 5em;
+    }
+
+    .error{
+    display: none;
+    margin-left: 10px;
+    }
+
+    .error_show{
+    color: red;
+    margin-left: 10px;
+    }
+
+    input.invalid, textarea.invalid{
+    border: 2px solid red;
+    }
+
+    input.valid, textarea.valid{
+    border: 2px solid green;
+    }
+    input {
+    padding: 10px;
+    font: 20px Arial;
+    width: 70%;
+    }
+    </style>
+  <body>
+    <!-- JavaScript Code -->
+    <script>
+      var currencyInput = document.querySelector('input[type="currency"]')
+      var currency = 'USD' // https://www.currency-iso.org/dam/downloads/lists/list_one.xml
+      
+      // format inital value
+      onBlur({target:currencyInput})
+      
+      // bind event listeners
+      currencyInput.addEventListener('focus', onFocus)
+      currencyInput.addEventListener('blur', onBlur)
+      
+      
+      function localStringToNumber( s ){
+	  return Number(String(s).replace(/[^0-9.-]+/g,""))
+      }
+      
+      function onFocus(e){
+	  var value = e.target.value;
+	  e.target.value = value ? localStringToNumber(value) : ''
+      }
+      
+      function onBlur(e){
+	  var value = e.target.value
+	  
+	  var options = {
+	      maximumFractionDigits : 2,
+	      currency              : currency,
+	      style                 : "currency",
+	      currencyDisplay       : "symbol"
+	  }
+	  
+	  e.target.value = (value || value === 0) 
+	      ? localStringToNumber(value).toLocaleString(undefined, options)
+	      : ''
+      }
+      
+      $(document).ready(function() {
+      <!-- Real-time Validation -->
+      <!--Name can't be blank-->
+      $('#name').on('input', function() {
+      var input=$(this);
+      var is_name=input.val();
+      if(is_name){input.removeClass("invalid").addClass("valid");}
+      else{input.removeClass("valid").addClass("invalid");}
+      });
+
+      <!--Email must be an email -->
+      $('#email').on('input', function() {
+      var input=$(this);
+      var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      var is_email=re.test(input.val());
+      if(is_email){input.removeClass("invalid").addClass("valid");}
+      else{input.removeClass("valid").addClass("invalid");}
+      });
+
+      <!--Website must be a website -->
+      $('#movement').on('input', function() {
+      var input=$(this);
+      if (input.val().substring(0,4)=='www.'){input.val('http://www.'+input.val().substring(4));}
+      var re = /(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/;
+      var is_url=re.test(input.val());
+      if(is_url){input.removeClass("invalid").addClass("valid");}
+      else{input.removeClass("valid").addClass("invalid");}
+      });
+
+      <!--Message can't be blank -->
+      $('#service').keyup(function(event) {
+      var input=$(this);
+      var message=$(this).val();
+      console.log(message);
+      if(message){input.removeClass("invalid").addClass("valid");}
+      else{input.removeClass("valid").addClass("invalid");}
+      });
+
+      <!-- After Form Submitted Validation-->
+      $("#submit button").click(function(event){
+      var form_data=$("#name").serializeArray();
+      var error_free=true;
+      for (var input in form_data){
+      var element=$("#name_"+form_data[input]['name']);
+      var valid=element.hasClass("valid");
+      var error_element=$("span", element.parent());
+      if (!valid){error_element.removeClass("error").addClass("error_show"); error_free=false;}
+      else{error_element.removeClass("error_show").addClass("error");}
+      }
+      if (!error_free){
+      event.preventDefault();
+      }
+      else{
+      alert('No errors: Form will be submitted');
+      }
+      });
+      });
+    </script>
+    <center>
+    <a href="https://www.geopher.com/"><h1>Geopher</h1></a>
+    <form id="form" method="GET" action="https://www.geopher.com/cft/s/">
+      <table>
+	<tr>
+	  <td>Text: <input id="name" type="text" name="name" placeholder="Example: &(Oslo,Car,Keys)" size="24" /><span class="error">This field is required</span></td>
+	</tr>
+	<tr>
+	  <td>Email: <input id="email" type="text" name="email" placeholder="your.name@gmail.com" /><span class="error">This field is required</span></td>
+	</tr>
+	<tr>
+	  <td>Service: <select id="service" name="service"><option value="Restaurant">Restaurant</option><option value="Bar">Bar</option><option value="Concert">Concert</option><option value="Film">Film</option><option value="Books">Books</option><option value="Health">Health</option><option value="Clothes">Clothes</option><option value="Food">Food</option><option value="Music">Music</option><option value="Electronics">Electronics</option><option value="Transport">Transport</option><option value="Rental">Rental</option><option value="Search" selected>Search</option></select></td>
+	</tr>
+	<tr>
+	  <td>Movement: <input type="text" name="movement" placeholder="https://yourwebsite.com/" /></td>
+	</tr>
+	<!--
+	<tr>
+	  <td>Latitude: <input type="text" name="glat" value="37.4375596"></td>
+	</tr>
+	<tr>
+	  <td>Longitude: <input type="text" name="glon" value="-122.11922789999998"></td>									      </tr>
+	-->
+	<input type="hidden" name="paid" value="1" placeholder="Type a price">
+	<tr>
+	  <td width="100px"><input type="submit" name="Submit" value="Save Movement-based Search" style="width: 300px;" /></td>
+	</tr>
+      </table>
+    </form>
+    <h2>Geopher / Were / Here / After</h2>
+    <p>Ole Aamot came up with <a href="https://www.geopher.com/api/movement/push.php?name=TheWildestIdea&service=Search&movement=https://www.apple.com/&glat=37.4375596&glon=-122.11922789999998&galt=0&paid=43">&amp;TheWildestIdea</a> at <a href="https://www.geopher.com/api/movement/push.php?name=AamotEngineering&service=Search&movement=https://www.aamot.engineering/&glat=37.4375596&glon=-122.11922789999998&galt=0&paid=0">&amp;AamotEngineering</a>:<a href="https://www.geopher.com/api/movement/push.php?name=%Search&service=Search&movement=https://www.apple.com/&glat=37.4375596&glon=-122.11922789999998&galt=0&paid=43">%Search</a> in Oslo, Norway in 2023.</p>
+    <p><a href="https://www.geopher.com/">Movement-based Search</a></p>
+    <script type="text/javascript" src="https://www.geopher.com/api/movement/?service=Search">
+    </script>
+    <script
+       src="https://code.jquery.com/jquery-3.3.1.js"
+       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+       crossorigin="anonymous">
+      var newLink = "https://www.geopher.com/api/movement/?service=Search";
+      $('script').each(function() {
+      var link = $(this).attr('src');
+      })
+    </script>
+    <script language="JavaScript">
+      var obj = JSON.parse(movements);
+      for (i=0; i < obj.movements.length; i++) {
+		    document.write("<p><h2><a href='https://geopher.com/" + obj.movements[i].name + "'>" + obj.movements[i].name + "</a></h2><p>" + obj.movements[i].distance + " km away</p><p><b><a href='" + obj.movements[i].movement + "'>" + obj.movements[i].movement + "</a></b></p><p><i>" + obj.movements[i].service + " " + "</i></p>\n");
+      }
+    </script>
+</td>
+</tr>
+</table>
+  </center>
+  </body>
+</html>

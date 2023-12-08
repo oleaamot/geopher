@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://api.piperpal.com/location/json.php?service=Books&glat=60&glon=10&radius=50"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const obj = JSON.parse(locations);
+      for (i=0; i < obj.locations.length; i++) {
+        document.write("<option value="" + obj.locations[i].name + ""><b>" + obj.locations[i].name + "</b> (<u>" + obj.locations[i].distance + "</u>)" + " <i>" + obj.locations[i].service + "</i></option>");
+        document.write("<p>" + obj.locations[i].distance + "</p><form method='GET' action='https://www.piperpal.com/'><input type='text' name='name' placeholder='' value='" + obj.locations[i].name + "'/><input type='hidden' name='glat' value='" + obj.locations[i].glat + "' /><input type='hidden' name='glon' value='" + obj.locations[i].glon + "'/><span id='geopher'></span><select name='service'><option selected value='" + obj.locations[i].service + "'></option></select><input type='submit' value='Search' />");
+      }
+    </script>
+  </body>
+</html>

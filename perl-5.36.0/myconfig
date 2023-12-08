@@ -1,0 +1,73 @@
+#!/bin/sh
+
+# This script is designed to provide a handy summary of the configuration
+# information being used to build perl. This is especially useful if you
+# are requesting help online or via email.
+
+# Note that the text lines /^Summary of/ .. /^\s*$/ are copied into Config.pm.
+cat <<'!NO!SUBS!'
+Summary of my perl5 (revision 5 version 36 subversion 0) configuration:
+   
+  Platform:
+    osname=linux
+    osvers=5.4.0-109-generic
+    archname=x86_64-linux
+    uname='linux shell 5.4.0-109-generic #123-ubuntu smp fri apr 8 09:10:54 utc 2022 x86_64 x86_64 x86_64 gnulinux '
+    config_args='-Dprefix=/home/5/g/geopher/perl5'
+    hint=recommended
+    useposix=true
+    d_sigaction=define
+    useithreads=undef
+    usemultiplicity=undef
+    use64bitint=define
+    use64bitall=define
+    uselongdouble=undef
+    usemymalloc=n
+    default_inc_excludes_dot=define
+  Compiler:
+    cc='cc'
+    ccflags ='-fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    optimize='-O2'
+    cppflags='-fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/local/include'
+    ccversion=''
+    gccversion='9.4.0'
+    gccosandvers=''
+    intsize=4
+    longsize=8
+    ptrsize=8
+    doublesize=8
+    byteorder=12345678
+    doublekind=3
+    d_longlong=define
+    longlongsize=8
+    d_longdbl=define
+    longdblsize=16
+    longdblkind=3
+    ivtype='long'
+    ivsize=8
+    nvtype='double'
+    nvsize=8
+    Off_t='off_t'
+    lseeksize=8
+    alignbytes=8
+    prototype=
+  Linker and Libraries:
+    ld='cc'
+    ldflags =' -fstack-protector-strong -L/usr/local/lib'
+    libpth=/usr/local/lib /usr/lib/x86_64-linux-gnu /usr/lib /usr/lib64
+    libs=-lpthread -lnsl -ldl -lm -lcrypt -lutil -lc
+    perllibs=-lpthread -lnsl -ldl -lm -lcrypt -lutil -lc
+    libc=libc-2.31.so
+    so=so
+    useshrplib=false
+    libperl=libperl.a
+    gnulibc_version='2.31'
+  Dynamic Linking:
+    dlsrc=dl_dlopen.xs
+    dlext=so
+    d_dlsymun=undef
+    ccdlflags='-Wl,-E'
+    cccdlflags='-fPIC'
+    lddlflags='-shared -O2 -L/usr/local/lib -fstack-protector-strong'
+
+!NO!SUBS!

@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <h1>Geopher Location Request from [ % first_name % ] [ % last_name % ] ([ % geopher_p % ]) ([ % geopher_id % ])</h1>
+  </body>
+  <p><strong>Hi,</strong></p>
+  <p>[ % first_name % ] [ % last_name % ] would like to know where you are.</p>
+  <p>Please visit
+    <blockquote>
+      <a href="http://www.geopher.com/respond/?id=[ % geopher_id % ]">http://www.geopher.com/respond/?id=[ % geopher_id % ]</a>
+    </blockquote>
+    to accept, reject or ignore the location request.</p>
+  <p>Cheers,<br />
+    The Geopher Team
+    <a href="https://geopher.com/">https://geopher.com/</a></p>
+  </body>
+</html>

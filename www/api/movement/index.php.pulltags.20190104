@@ -1,0 +1,63 @@
+<?php
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+?>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <meta charset="utf-8">
+    <title>Piperpal</title>
+    <!--[if IE]><![endif]-->
+    <meta charset="utf-8">
+
+    <!--[if IE 8]>
+      <link href="https://www.piperpal.com/css/common_o2.1_ie8-91981ea8f3932c01fab677a25d869e49.css" media="all" rel="stylesheet" type="text/css" />
+    <![endif]-->
+   <!--[if !(IE 8)]><!-->
+      <link href="https://www.piperpal.com/css/common_o2.1-858f47868a8d0e12dfa7eb60fa84fb17.css" media="all" rel="stylesheet" type="text/css" />
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+      <link href="https://www.piperpal.com/css/airglyphs-ie8-9f053f042e0a4f621cbc0cd75a0a520c.css" media="all" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <link href="https://www.piperpal.com/css/main-f3fcc4027aaa2c83f08a1d51ae189e3b.css" media="screen" rel="stylesheet" type="text/css" />
+  <!--[if IE 7]>
+    <link href="https://www.piperpal.com/css/p1_ie_7-0ab7be89d3999d751ac0e89c44a0ab50.css" media="screen" rel="stylesheet" type="text/css" />
+  <![endif]-->
+  <!--[if IE 6]>
+    <link href="https://www.piperpal.com/css/p1_ie_6-7d6a1fd8fe9fdf1ce357f6b864c83979.css" media="screen" rel="stylesheet" type="text/css" />
+  <![endif]-->
+    <script type="text/javascript" src="https://www.piperpal.com/piperpal-autocomplete-tours.php"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  </head>
+  <body>
+    <div id="log"></div>	 
+    <script>      
+    function ajaxCall(position){
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        var service = "Search";
+        var jsonRequest = $.ajax({
+          url: "https://api.piperpal.com/location/json.php", 
+                type: 'POST', //I want a type as POST
+                data: {'glat': latitude, 'glon': longitude, 'service': service },
+                success: function(response) {
+                document.write (response);
+	        }
+        });
+    }
+    function pullTags(){
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(ajaxCall);         
+    } else{
+        $('#log').html("GPS is not available");
+    }
+    $(document).ready(function(){      
+        pullTags();
+        setInterval(pullTags,1800);
+    });
+    </script>
+  </body>
+</html>

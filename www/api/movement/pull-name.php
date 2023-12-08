@@ -1,0 +1,67 @@
+<?php
+$db = mysqli_connect("piperpal.mysql.domeneshop.no","piperpal","FiFLHHPxyR7PXUg","piperpal");
+$query = "SELECT DISTINCT id,name,service,location,modified,created,glat,glon,paid,token,type,email,111.045*DEGREES(ACOS(COS(RADIANS(latpoint))*COS(RADIANS(glat))*COS(RADIANS(longpoint)-RADIANS(glon))+SIN(RADIANS(latpoint))*SIN(RADIANS(glat)))) AS distance_in_km FROM piperpal JOIN (SELECT  " . $_GET['glat'] . "  AS latpoint, " . $_GET['glon'] . " AS longpoint) AS p ON 1=1 WHERE service = '" . $_GET['service'] . "' and name = '" . $_GET['name'] . "' ORDER BY distance_in_km;";
+$result = $db->query($query);
+// print $query;
+$num_coords = mysqli_num_rows($result);
+if ($num_coords == 0) {
+  print '<h3>' . $_GET['service'] . '</h3><ul><li><a href="http://piperpal.com/cft/?location=' . $_GET['service'] . '&service=' . basename($_SERVER['HTTP_REFERER']) . '">New</a></li><li>Upvote</li><li>Comment</li><li>Stamp</li></ul></ul>';
+//  header("Location: http://piperpal.com/");
+} else {
+  // print "$(function(){\n  var locations = [\n";
+  // print "var locations = '{ \"locations\" : [' + '";
+  $count = 0;
+  print "<h1>" . $_GET['service'] . "</h1>";
+  while($object = mysqli_fetch_object($result)) {
+    $count++;
+    if ($count == $num_coords) {
+      // print '{"id": "' . $object->id . '", "name": "' . $object->name . '", "service": "' . $object->service . '", "location": "' . $object->location . '", "modified": "' . $object->modified . '", "created": "' . $object->created . '", "glat": "' . $object->glat . '", "glon": "' . $object->glon . '", "paid": "' . $object->paid . '", "token": "' . $object->token . '", "type": "' . $object->type . '", "distance": "' . $object->distance_in_km . '", "email": "' . $object->email . '"}';
+      //      print '<p>' . $num_coords . 'th coordinate</p>';
+      print '<ul><li><b><a href="' . $object->name . '">' . $object->name . '</a><br /><a href="' . $object->location . '">' . $object->location . '</a> (' . $object->distance_in_km . ')<ul><li><a href="http://piperpal.com/cft/?location=' . $object->name . '&service=' . $object->service . '">New event</a></li><li><a href="http://piperpal.com/upvote/?id=' . $object->id . '&location=' . $object->name . '&service=' . $object->service . '">Upvote</a></li>';
+
+      print '<li><form method="GET" action="http://piperpal.com/comment/?id=' . $object->id . '&location=' . $object->name . '&service=' . $object->service . '"><input type="text" name="name" placeholder="Name" /><input type="text" name="comment" placeholder="Comment" /><input type="hidden" name="id" value="' . $object->id . '" /><input type="hidden" name="location" value="' . $object->name . '" /><input type="hidden" name="service" value="' . $object->service . '" /><input type="hidden" name="glat" value="' . $_GET['glat'] . '" /><input type="hidden" name="glon" value="' . $_GET['glon'] . '" /><input type="submit" name="Save" value="Save" /></form></li></ul>';
+
+      $msgquery = "SELECT DISTINCT id,name,service,comment,location,modified,created,glat,glon,paid,token,type,email FROM pcomment WHERE location like '" . $object->name . "';";
+      // print $msgquery;
+      // $msgquery = "SELECT DISTINCT name,service,comment,location,modified,created,glat,glon,paid,token,type,email FROM pcomment WHERE " . $_GET['service'] . "' ORDER BY distance_in_km";
+      $msgresult = $db->query($msgquery);
+      print "<ul>\n";
+      while($msgobject = mysqli_fetch_object($msgresult)) {
+	print "<li>&lt;" . $msgobject->name . "&gt; " . $msgobject->comment . "</li>\n";
+      }
+
+      print '<li><a href="http://piperpal.com/stamp/?id=' . $object->id . '&location=' . $object->name . '&service=' . $object->service . '&glat=' . $_GET['glat'] . '&glon=' . $_GET['glon'] . '">Stamp</a></li>';
+      
+      print "</ul>";
+      
+      print "</ul>";
+      
+    } else {
+      // print '{"id": "' . $object->id . '", "name": "' . $object->name . '", "service": "' . $object->service . '", "location": "' . $object->location . '", "modified": "' . $object->modified . '", "created": "' . $object->created . '", "glat": "' . $object->glat . '", "glon": "' . $object->glon . '", "paid": "' . $object->paid . '", "token": "' . $object->token . '", "type": "' . $object->type . '", "distance": "' . $object->distance_in_km . '", "email": "' . $object->email . '"},';
+      print '<ul><li><b><a href="' . $object->name . '">' . $object->name . '</a><br /><a href="' . $object->location . '">' . $object->location . '</a> (' . $object->distance_in_km . ')<ul><li><a href="http://piperpal.com/cft/?location=' . $object->name . '&service=' . $object->service . '">New event</a></li><li><a href="http://piperpal.com/upvote/?id=' . $object->id . '&location=' . $object->name . '&service=' . $object->service . '">Upvote</a></li><li><form method="GET" action="http://piperpal.com/comment/?id=' . $object->id . '&location=' . $object->name . '&service=' . $object->service . '"><input type="text" name="name" placeholder="Name" /><input type="text" name="comment" placeholder="Comment" /><input type="hidden" name="id" value="' . $object->id . '" /><input type="hidden" name="location" value="' . $object->name . '" /><input type="hidden" name="service" value="' . $object->service . '" /><input type="hidden" name="glat" value="' . $_GET['glat'] . '" /><input type="hidden" name="glon" value="' . $_GET['glon'] . '" /><input type="submit" name="Save" value="Save" /></form></li></ul>';
+
+      $msgquery = "SELECT DISTINCT id,name,service,comment,location,modified,created,glat,glon,paid,token,type,email FROM pcomment WHERE location like '" . $object->name . "';";
+      print $msgquery;
+
+      // $msgquery = "SELECT DISTINCT name,service,comment,location,modified,created,glat,glon,paid,token,type,email FROM pcomment WHERE " . $_GET['service'] . "' ORDER BY distance_in_km";
+      $msgresult = $db->query($msgquery);
+      // print $msgquery;
+
+      print "<ul>";
+      while($msgobject = mysqli_fetch_object($msgresult)) {
+	print "<li>&lt;" . $msgobject->name . "&gt; " . $msgobject->comment . "</li>\n";
+      }
+
+      print '<li><a href="http://piperpal.com/stamp/?id=' . $object->id . '&location=' . $object->name . '&service=' . $object->service . '&glat=' . $_GET['glat'] . '&glon=' . $_GET['glon'] . '">Stamp</a></li>';
+
+      print "</ul>";
+
+      print "</ul>";
+
+      // print '<a href="' . $object->location . '">' . $object->name . '</a> <a href="http://piperpal.com/cft/?location=' . $object->name . '&service=' . $object->service . '">New</a> / Upvote / Comment / Stamp (' . $object->distance_in_km . ')<br />';
+    }
+  }
+  // print "]}';\n";
+
+}
+?>

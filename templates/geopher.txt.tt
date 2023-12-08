@@ -1,0 +1,13 @@
+Hi,
+
+[ % first_name % ] [ % last_name % ] would like to know where you are.
+
+Please visit
+
+http://www.geopher.com/respond/?id=[ % geopher_id % ]
+
+to accept, reject or ignore the location request.
+
+Cheers,
+The Geopher Team
+https://geopher.com/

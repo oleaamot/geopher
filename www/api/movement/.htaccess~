@@ -1,0 +1,9 @@
+RewriteMap  deflector "txt:/home/4/p/piperpal/www/api/location/location.map"
+
+RewriteCond "%{HTTP_REFERER}" !=""
+RewriteCond "${deflector:%{HTTP_REFERER}}" "=-"
+RewriteRule "^" "%{HTTP_REFERER}" [R,L]
+
+RewriteCond "%{HTTP_REFERER}" !=""
+RewriteCond "${deflector:%{HTTP_REFERER}|NOT-FOUND}" "!=NOT-FOUND"
+RewriteRule "^" "${deflector:%{HTTP_REFERER}}" [R,L]

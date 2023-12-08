@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Location Location Location</title>
+
+    <script type="text/javascript" charset="utf-8">
+
+   var watchID = null;
+
+function piperpal() {
+  // Update every 1 ms seconds
+  var options = {enableHighAccuracy: true,timeout: 5000,maximumAge: 0,desiredAccuracy: 0, frequency: 1 };
+  watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
+}
+
+// onSuccess Geolocation
+//
+function onSuccess(position) {
+    var xmlhttp;
+    if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }else{// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }       
+    var str = 'glat='  + position.coords.latitude + '&' + 'glon=' + position.coords.longitude + '&service=' + <?php echo $_GET['service']; ?> + '&name=' + <?php echo $_GET['name']; ?>;
+    var url = "http://api.piperpal.com/location/json.php";
+    var params = str;
+    xmlhttp.open("GET", url+"?"+params, true);
+    document.writeln(xmlhttp.responseText);        
+    window.location.href=xmlhttp.responseText;
+    window.location.href= url + '?' + str;
+    // document.writeln(str);
+    document.body.innerHTML += xmlhttp.responseText;
+    xmlhttp.send();
+    //document.writeln("send");
+    //document.writeln(str);
+}
+
+// clear the watch that was started earlier
+// 
+function clearWatch() {
+    if (watchID != null) {
+        navigator.geolocation.clearWatch(watchID);
+        watchID = null;
+    }
+}
+
+// onError Callback receives a PositionError object
+//
+function onError(error) {
+    alert('code: '    + error.code    + '\n' +
+	'message: ' + error.message + '\n');
+}
+
+    </script>
+</head>
+<body onload="piperpal();">
+<p id="geolocation">Watching geolocation...</p>
+<button onclick="piperpal();">Watch</button>     
+</body>
+</html>
