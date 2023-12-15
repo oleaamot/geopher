@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Request</title>
+</head>
+<body>
+    <h1>Location Request</h1>
+
+    <p>Location Request from <strong>oka@oka.no</strong></p>
+
+    <form action="process_location.php" method="post">
+        <input type="hidden" name="request_id" value="abcdefghijklmnopqrs">
+
+        <!-- You can add more details about the location request here -->
+        
+        <button type="submit" name="action" value="accept">Accept</button>
+        <button type="submit" name="action" value="ignore">Ignore</button>
+        <button type="submit" name="action" value="negotiate">Negotiate</button>
+        <button type="submit" name="action" value="cancel">Cancel</button>
+    </form>
+</body>
+</html>

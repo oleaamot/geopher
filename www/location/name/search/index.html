@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movement Submission Form</title>
+</head>
+<body>
+    <h1>Movement Submission Form</h1>
+    <form id="locationForm" action="/location/name/search/submit/" method="POST">
+        <label for="initiatorEmail">Initiator Email:</label>
+        <input type="email" id="initiatorEmail" name="initiatorEmail" required><br>
+        <label for="targetEmail">Target Email:</label>
+        <input type="email" id="targetEmail" name="targetEmail" required><br>
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" min="0" required><br>
+        <label for="timePeriod">Time Period:</label>
+        <input type="text" id="timePeriod" name="timePeriod" placeholder="e.g., next hour" required><br>
+        <button type="button" onClick="getMovement();">Get Current Movement</button>
+	<input type="hidden" id="glat" name="glat" placeholder="${position.coords.latitude}" />
+	<input type="hidden" id="glon" name="glon" placeholder="${position.coords.longitude}" />
+        <!-- Display geolocation data -->
+        <p id="locationInfo"></p>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function getMovement() {
+            if (1) {
+                while (1) {
+		    navigator.geolocation.getCurrentPosition(showPosition, showError);
+		    sleep(5);
+		}
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+        function showPosition(position) {
+            const locationInfo = document.getElementById("locationInfo");
+            locationInfo.innerHTML = `Current Movement: Latitude ${position.coords.latitude}, Longitude ${position.coords.longitude}`;
+        }
+        function showError(error) {
+            const locationInfo = document.getElementById("locationInfo");
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    locationInfo.innerHTML = "User denied the request for Geolocation.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    locationInfo.innerHTML = "Movement information is unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    locationInfo.innerHTML = "The request to get user location timed out.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    locationInfo.innerHTML = "An unknown error occurred.";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
