@@ -17,8 +17,8 @@
         <label for="timePeriod">Time Period:</label>
         <input type="text" id="timePeriod" name="timePeriod" placeholder="e.g., next hour" required><br>
         <button type="button" onClick="getMovement();">Get Current Movement</button>
-	<input type="hidden" id="glat" name="glat" placeholder="${position.coords.latitude}" />
-	<input type="hidden" id="glon" name="glon" placeholder="${position.coords.longitude}" />
+	<input type="value" id="glat" name="glat" placeholder="${position.coords.latitude}.value" />
+	<input type="value" id="glon" name="glon" placeholder="${position.coords.longitude}.value" />
         <!-- Display geolocation data -->
         <p id="locationInfo"></p>
         <button type="submit">Submit</button>
@@ -36,8 +36,12 @@
         }
         function showPosition(position) {
             const locationInfo = document.getElementById("locationInfo");
-            locationInfo.innerHTML = `Current Movement: Latitude ${position.coords.latitude}, Longitude ${position.coords.longitude}`;
-        }
+	    const glat = document.getElementById("glat");
+	    const glon = document.getElementById("glon");
+	    locationInfo.innerHTML = `Current Movement: Latitude ${position.coords.latitude}, Longitude ${position.coords.longitude}`;
+	    document.getElementById('glat').value = ${position.coords.latitude};
+	    document.getElementById('glon').value = ${position.coords.longitude};
+	}
         function showError(error) {
             const locationInfo = document.getElementById("locationInfo");
             switch (error.code) {

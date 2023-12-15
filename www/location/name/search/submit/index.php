@@ -6,7 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $targetEmail = $_POST["targetEmail"] ?? '';
     $price = $_POST["price"] ?? '';
     $timePeriod = $_POST["timePeriod"] ?? '';
-
+    $glat = $_POST["glat"] ?? '';
+    $glon = $_POST["glon"] ?? '';
     // TODO: Implement validation and error handling
 
      // Log the form data
