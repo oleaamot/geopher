@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // TODO: Implement validation and error handling
 
      // Log the form data
-    $logMessage = "Movement Search Request - Initiator Email: $initiatorEmail, Target Email: $targetEmail, Price: $price, Time Period: $timePeriod";
+    $logMessage = "Movement Search Request - Initiator Email: $initiatorEmail, Target Email: $targetEmail, Price: $price, Time Period: $timePeriod\n";
     error_log($logMessage, 3, '/home/5/g/geopher/log/logfile.log');
 
     // Prepare the email subject and message
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $message .= "Price: $price\n";
     $message .= "Time Period: $timePeriod\n";
     $message .= "<a href='https://geopher.com/location/name/locate/?id=abcdefghijklmnopqrs'>https://geopher.com/location/name/locate/?id=abcdefghijklmnopqrs</a>";
-    $message .= "<a href='https://geopher.com/?query=&radius=50&search=Go&glat=$glat&glon=$glon&glat=null#results'>https://geopher.com/?query=&radius=50&search=Go&glat=" . $glat . "&glon=" . $glon . "&galt=" . $galt . "#results</a>";
+    $message .= "<a href='https://geopher.com/?query=&radius=50&search=Go&glat=" . $glat . "&glon=" . $glon . "&galt=" . $galt . "#results'>https://geopher.com/?query=&radius=50&search=Go&glat=" . $glat . "&glon=" . $glon . "&galt=" . $galt . "#results</a>";
     // Send the email
     $recipient = $targetEmail; // Replace with the actual recipient email address
     $headers = "From: Geopher Movement Search <noreply@geopher.com>";
