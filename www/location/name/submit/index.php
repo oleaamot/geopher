@@ -6,7 +6,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $targetEmail = $_POST["targetEmail"] ?? '';
     $price = $_POST["price"] ?? '';
     $timePeriod = $_POST["timePeriod"] ?? '';
-
+    $glat = $_POST["glat"] ?? '';
+    $glon = $_POST["glon"] ?? '';
+    $galt = $_POST["galt"] ?? '';
     // TODO: Implement validation and error handling
 
      // Log the form data
@@ -20,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $message .= "Price: $price\n";
     $message .= "Time Period: $timePeriod\n";
     $message .= "<a href='https://geopher.com/location/name/locate/?id=abcdefghijklmnopqrs'>https://geopher.com/location/name/locate/?id=abcdefghijklmnopqrs</a>";
-    $message .= "<a href='https://geopher.com/?query=&radius=50&search=Go&glat=$glat&glon=$glon&glat=null#results'>https://geopher.com/?query=&radius=50&search=Go&glat=$glat&glon=$glon&glat=null#results</a>";
+    $message .= "<a href='https://geopher.com/?query=&radius=50&search=Go&glat=$glat&glon=$glon&glat=null#results'>https://geopher.com/?query=&radius=50&search=Go&glat=" . $glat . "&glon=" . $glon . "&galt=" . $galt . "#results</a>";
     // Send the email
     $recipient = $targetEmail; // Replace with the actual recipient email address
     $headers = "From: Geopher Movement Search <noreply@geopher.com>";
