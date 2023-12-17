@@ -6,62 +6,63 @@
     <title>Movement Submission Form</title>
 </head>
 <body>
-  <h1>Movement Submission Form</h1>
-  <form id="locationForm" action="/location/name/search/submit/" method="POST">
-    <label for="initiatorEmail">Initiator Email:</label>
-    <input type="email" id="initiatorEmail" name="initiatorEmail" required><br>
-    <label for="targetEmail">Target Email:</label>
-    <input type="email" id="targetEmail" name="targetEmail" required><br>
-    <label for="price">Price:</label>
-    <input type="number" id="price" name="price" min="0" required><br>
-    <label for="timePeriod">Time Period:</label>
-    <input type="text" id="timePeriod" name="timePeriod" placeholder="e.g., next hour" required><br>
-    <button type="button" onclick="getMovement();">Get Current Movement</button>
-    <input type="text" id="glat" name="glat" value="${position.coords.latitude}.value" />
-    <input type="text" id="glon" name="glon" value="${position.coords.longitude}.value" />
-    <input type="text" id="galt" name="galt" value="${position.coords.altitude}.value" />
-    <!-- Display geolocation data -->
-    <p id="locationInfo"></p>
-    <button type="submit">Submit</button>
-  </form>
-  <script>
-    function getMovement() {
-        if (1) {
-            while (1) {
-		navigator.geolocation.getCurrentPosition(showPosition, showError);
-		sleep(5);
-	    }
-        } else {
+    <h1>Movement Submission Form</h1>
+    <form id="locationForm" action="/location/name/search/submit/" method="POST">
+        <label for="initiatorEmail">Initiator Email:</label>
+        <input type="email" id="initiatorEmail" name="initiatorEmail" required><br>
+        <label for="targetEmail">Target Email:</label>
+        <input type="email" id="targetEmail" name="targetEmail" required><br>
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" min="0" required><br>
+        <label for="timePeriod">Time Period:</label>
+        <input type="text" id="timePeriod" name="timePeriod" placeholder="e.g., next hour" required><br>
+        <button type="button" onclick="getMovement();">Get Current Movement</button><br>
+        <input type="text" id="glat" name="glat" value="" placeholder="Latitude"><br>
+        <input type="text" id="glon" name="glon" value="" placeholder="Longitude"><br>
+        <input type="text" id="galt" name="galt" value="" placeholder="Altitude">
+        <!-- Display geolocation data -->
+        <p id="locationInfo"></p>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function getMovement() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
                 alert("Geolocation is not supported by this browser.");
-        }
-    }
-    function showPosition(position) {
-        const locationInfo = document.getElementById("locationInfo");
-	const glat = document.getElementById("glat");
-	const glon = document.getElementById("glon");
-	const galt = document.getElementById("galt");
-	locationInfo.innerHTML = `Current Movement: Latitude ${position.coords.latitude}, Longitude ${position.coords.longitude}`;
-	document.getElementById('glat').value = ${position.coords.latitude};
-	document.getElementById('glon').value = ${position.coords.longitude};
-	document.getElementById('galt').value = ${position.coords.longitude);
-	}
-    function showError(error) {
-        const locationInfo = document.getElementById("locationInfo");
-            switch (error.code) {
-            case error.PERMISSION_DENIED:
-                locationInfo.innerHTML = "User denied the request for Geolocation.";
-                    break;
-            case error.POSITION_UNAVAILABLE:
-                locationInfo.innerHTML = "Movement information is unavailable.";
-                break;
-            case error.TIMEOUT:
-                locationInfo.innerHTML = "The request to get user location timed out.";
-                break;
-                case error.UNKNOWN_ERROR:
-                locationInfo.innerHTML = "An unknown error occurred.";
-                break;
             }
-    }
+        }
+
+        function showPosition(position) {
+            const locationInfo = document.getElementById("locationInfo");
+            const glatInput = document.getElementById("glat");
+            const glonInput = document.getElementById("glon");
+            const galtInput = document.getElementById("galt");
+
+            locationInfo.innerHTML = `Current Movement: Latitude ${position.coords.latitude}, Longitude ${position.coords.longitude}`;
+            glatInput.value = position.coords.latitude;
+            glonInput.value = position.coords.longitude;
+            galtInput.value = position.coords.altitude;
+        }
+
+        function showError(error) {
+            const locationInfo = document.getElementById("locationInfo");
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    locationInfo.innerHTML = "User denied the request for Geolocation.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    locationInfo.innerHTML = "Movement information is unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    locationInfo.innerHTML = "The request to get user location timed out.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    locationInfo.innerHTML = "An unknown error occurred.";
+                    break;
+            }
+        }
     </script>
-  </body>
+</body>
 </html>

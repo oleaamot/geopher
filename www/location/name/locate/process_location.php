@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Retrieve the action and request ID from the form
     $action = $_POST["action"] ?? '';
     $requestId = $_POST["request_id"] ?? '';
-
+    $initiatorEmail = $_POST["initiatorEmail"] ?? '';
     // Perform actions based on the user's response
     switch ($action) {
         case 'accept':
@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 function handleAcceptance($requestId) {
     // Perform actions to retrieve and share location
     // For demonstration purposes, echo a success message
-    echo "Movement accepted successfully.";
-    echo "<a href='https://geopher.com/location/name/submit?inititorEmail=" . $_OST['initiatorEmail'] . "&targetEmail=" . $_POST['targetEmail'] . "&price=" . $_POST['price'] . "&timePeriod=" . $_POST['timePeriod'] . "'>Submit Movement Request to " . $_POST['initatorEmail'] . "</a>";
+    echo "Movement accepted successfully.<br>";
+    echo "<a href='https://geopher.com/location/name/search/?initiatorEmail=" . $_POST['targetEmail'] . "&targetEmail=" . $_POST['initiatorEmail'] . "&price=" . $_POST['price'] . "&timePeriod=" . $_POST['timePeriod'] . "'>Submit Movement Request to " . $_POST['initiatorEmail'] . "</a>";
 }
 
 // Function to handle the "Ignore" action
