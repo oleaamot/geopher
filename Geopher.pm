@@ -120,7 +120,7 @@ sub input_searchers {
 	print '</select></td>';
     }
     print '<td><input type="submit" id="search" name="search" value="Go" /></td></tr></table>';
-    print "<span id='status'><input type='hidden' name='glat' /><input type='hidden' name='glon' /><input type='hidden' name='galt' /></span>\n";
+    print "<span id='status'><input type='hidden' name='glat' value='" . $c->param('glat') . "'/><input type='hidden' name='glon' value='" . $c->param('glon') . "'/><input type='hidden' name='galt' value='" . $c->param('galt') . "'/></span>\n";
     print "</form>";
     print "<h3>Remember in the world around you</h3>";
     print "<p><a href='https://www.geopher.com/apple.html'>Submit entries in Geopher\'s Movement-aware Search Engine</a></p>";
@@ -131,7 +131,8 @@ sub input_searchers {
     print '<p><a href="https://www.geopher.com/?query=&radius=5&search=Go&service=Books&glat=55.6828273&glon=12.6082921&galt=0#results">Copenhagen</a>, <a href="https://www.geopher.com/?query=Apple&radius=40075&search=Go&service=Books&glat=37.3316756&glon=-122.0327639#results">Apple Infinite Loop</a>, <a href="https://www.geopher.com/?query=&radius=5&search=Go&service=Books&glat=51.5073219&glon=-0.1276474&galt=0#results">London</a>, <a href="https://www.geopher.com/?query=&radius=5&search=Go&service=Books&glat=40.6399278&glon=-73.7786925&galt=0#results">New York</a>, <a href="https://www.geopher.com/?query=&radius=5&search=Go&service=Books&glat=48.8566969&glon=2.3514616&galt=0#results">Paris</a></p>';
     print '<p>LLM: <a href="http://chat.openai.com/">ChatGPT</a>, <a href="https://ai.meta.com/llama/">Llama 2</a>, <a href="https://bard.google.com/">Bard</a>, <a href="http://ai.bing.com/">Bing</a></p>';    
     print '<p>Maps: <a href="http://maps.google.com/">Google Maps</a>, <a href="http://www.openstreetmap.org/">Open Street Map</a>, <a href="http://www.bing.com/maps/">Bing Maps</a>, <a href="http://maps.apple.com/">Apple Maps</a></p>';
-    print '<p>Search: <a href="http://www.google.com/">Google</a>, <a href="http://www.duckduckgo.com/">DuckDuckGo</a>, <a href="http://www.bing.com/">Bing</a>, <a href="http://www.yahoo.com/">Yahoo!</a></p>';
+    print '<p>Search: <a href="http://www.google.com/">Google</a>, <a href="http://www.duckduckgo.com/">DuckDuckGo</a>, <a href="http://www.piperpal.com/">Piperpal</a>, <a href="http://www.bing.com/">Bing</a>, <a href="http://www.yahoo.com/">Yahoo!</a></p>';
+    print "<p>Copyright &copy; 2023 <a href=\"https://www.aamot.engineering/\">Aamot Engineering</a></p>";
 }
 
 sub input_publisher {
@@ -200,7 +201,7 @@ sub input_publisher {
     print "</span>\n";
     print "<input type='hidden' name='c' value='INSERT' />\n";
     print '<span class="send_form">';
-    print "<script src='http://checkout.stripe.com/checkout.js' class='stripe-button' data-key='pk_live_9UbKhDJJWaAFnMjYQTBA8I9i00H8Z5eMmL' data-amount='0' data-name='Aamot Software' data-description='Geopher Entry ($0.01 USD)' data-image='/img/Movement_Icon.png'></script>";
+    print "<script src='http://checkout.stripe.com/checkout.js' class='stripe-button' data-key='pk_live_dg4Qj9EUNdnBicNW40nNoEJh' data-amount='0' data-name='Aamot Software' data-description='Geopher Entry ($0.01 USD)' data-image='/img/Movement_Icon.png'></script>";
     # print '<input class="custom_send_button" type="submit" value="PAY WITH CARD">';
     print '</span>';
     print '</form>';
@@ -252,8 +253,8 @@ sub input_advertiser {
 #          placeholder="Not After">
 #      </span>
 #    </span>';
-    print "<span id='status'><input type='hidden' name='glat' placeholder='Latitude' size=16 /><input type='hidden' name='glon' placeholder='Longitude' size=16 /><inpyt type='hidden' name='galt' placeholder='Altitude' size=16 /></span>\n";
-    print "<td><form action='https://www.geopher.com/api/movement/push.php' method='GET'><script src='http://checkout.stripe.com/checkout.js' class='stripe-button' data-key='pk_test_EeI0KTkAXtAyW1ajpKukLZPm00ChuDtuP8' data-amount='4500' data-name='Aamot Engineering' data-description='1 Hour Programming/Support (45 USD)' data-image='/img/Movement_Icon.png'></script></td>";
+    print "<span id='status'><input type='hidden' name='glat' placeholder='Latitude' size=16 value='" . $c->param('glat') . "'/><input type='hidden' name='glon' placeholder='Longitude' size=16 value='" . $c->param('glon') . "' /><inpyt type='hidden' name='galt' placeholder='Altitude' size=16 value='" . $c->param('galt') . "' /></span>\n";
+    print "<td><form action='https://www.geopher.com/api/movement/push.php' method='GET'><script src='http://checkout.stripe.com/checkout.js' class='stripe-button' data-key='pk_live_dg4Qj9EUNdnBicNW40nNoEJh' data-amount='4500' data-name='Aamot Engineering' data-description='1 Hour Programming/Support (45 USD)' data-image='/img/Movement_Icon.png'></script></td>";
     print "</tr>\n";
     print "</form>\n";
 
@@ -562,7 +563,7 @@ sub insert_publisher {
 	    next unless $tag =~ m/[a-zA-záäåāąæćčéēėęģíīįķļłńņðóöøōőŗśšúüūűųýźżžþ]/i;  
 	    $name =~ s{&$tag}{<a href="https://www.geopher.com/register.cgi?name=$tag">&$tag</a>}g;
 	}
-	$q = "INSERT INTO geopher (name, movement, service, glat, glon, modified, created, paid, token, type, email) VALUES ('" . $name . "','" . $c->param('movement') . "','" . $c->param('service') . "','" . $c->param('glat') . "','" . $c->param('glon') . "', NOW(), NOW(), 1, '" . $c->param('stripeToken') . "', '" . $c->param('stripeTokenType') . "','" . $c->param('stripeEmail') . "') ON DUPLICATE KEY UPDATE modified = NOW();";
+	$q = "INSERT INTO geopher (name, movement, service, glat, glon, galt, modified, created, paid, token, type, email) VALUES ('" . $name . "','" . $c->param('movement') . "','" . $c->param('service') . "','" . $c->param('glat') . "','" . $c->param('glon') . "','" . $c->param('galt') . "', NOW(), NOW(), 1, '" . $c->param('stripeToken') . "', '" . $c->param('stripeTokenType') . "','" . $c->param('stripeEmail') . "') ON DUPLICATE KEY UPDATE modified = NOW();";
 	print $q;
 	$dbh->do ($q);
     } else {
